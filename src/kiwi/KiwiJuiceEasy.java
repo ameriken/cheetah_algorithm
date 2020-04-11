@@ -1,6 +1,6 @@
 package kiwi;
 
-class KiwiJuiceEasy {
+public class KiwiJuiceEasy {
     int[] thePouring(int[] capacities, int[] bottles, int[] fromId, int[] toId) {
 
         for (int i =0; i < fromId.length; i++) {
