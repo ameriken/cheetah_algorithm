@@ -23,7 +23,7 @@ class InterestingDigits {
                 }
                 if(!ok) break;
             }
-            if(!ok) v.add(n);
+            if(ok) v.add(n);
         }
 
         int[]  ans = new int[v.size()];
