@@ -8,12 +8,13 @@ public class MazeMaker {
                     int[] moveRow, int[] moveCol) {
         int max = 0;
         int width = maze[0].length(), height = maze.length;
+        // フィールド全体の大きさ
         int[][] board = new int[height][width];
 
         for (int i = 0; i < height; i++) {
             for (int k = 0; k < width; k++) {
-                board[i][k] = -1;
 
+                board[i][k] = -1;
                 board[startRow][startCol] = 0;
 
                 Queue<Integer> queueX = new LinkedList<Integer>();
@@ -25,7 +26,6 @@ public class MazeMaker {
                     int x = queueX.poll(), y = queueY.poll();
 
                     for (int m = 0; m < moveRow.length; m++) {
-
                         int nextX = x + moveCol[m], nextY = y + moveRow[m];
 
                         if (0 <= nextX && nextX < width
