@@ -18,9 +18,15 @@ class FriendsScore {
                     cnt++;
                 } else {
                     for(int m=0; m<n; m++) {
+                        //System.out.println("frinends[k] = " + friends[k].charAt(m));
+                        //System.out.println("friends[m] = "+ friends[m].charAt(i));
+                        //System.out.println("m = "+ m);
+                        //System.out.println("i = "+ i);
+                        //System.out.println("k = "+ k);
                         if(friends[k].charAt(m) == 'Y'
                                 && friends[m].charAt(i) == 'Y') {
                             cnt++;
+                            System.out.println("break");
                             break;
                         }
                     }
