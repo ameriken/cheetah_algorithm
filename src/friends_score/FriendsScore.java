@@ -26,7 +26,7 @@ class FriendsScore {
                         if(friends[k].charAt(m) == 'Y'
                                 && friends[m].charAt(i) == 'Y') {
                             cnt++;
-                            System.out.println("break");
+                            //System.out.println("break");
                             break;
                         }
                     }
